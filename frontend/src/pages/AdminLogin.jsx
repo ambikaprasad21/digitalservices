@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 
 function AdminLogin() {
   const { login } = useLogin();
+  const [isLoading, setIsLoading] = useState(false);
   const [hide, setHide] = useState(true);
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -17,12 +18,16 @@ function AdminLogin() {
     setError("");
 
     try {
+      setIsLoading(true);
       await login(password);
       toast.success("Login successful!");
       navigate("/");
     } catch (err) {
+      setIsLoading(false);
       setError(err.message || "Failed to log in.");
       toast.error(err.message || "Failed to log in.");
+    } finally {
+      setIsLoading(false);
     }
   };
   return (
@@ -55,7 +60,9 @@ function AdminLogin() {
           </div>
         </div>
         {error && <p style={{ color: "black", fontSize: "1.6rem" }}>{error}</p>}
-        <button className={styles.btn}>Login</button>
+        <button className={styles.btn}>
+          {isLoading ? "Logging in..." : "Login"}
+        </button>
       </form>
     </div>
   );
