@@ -1,0 +1,100 @@
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.hero p {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 8rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 15rem 10rem;
+}
+
+.det_data img {
+  width: 50%;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.det_box {
+  display: flex;
+  gap: 5rem;
+}
+
+.det_rev {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5rem;
+}
+
+.det_text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.det_text h2 {
+  font-size: 3rem;
+}
+
+.det_para {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+@media (max-width: 1190px) {
+  .hero p {
+    font-size: 6rem;
+    font-weight: 600;
+  }
+
+  .detail {
+    padding: 15rem 2rem;
+  }
+
+  .det_data img {
+    width: 40%;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .hero p {
+    font-size: 3rem;
+  }
+  .det_data img {
+    width: 100%;
+    height: 25rem;
+  }
+  .det_box {
+    flex-direction: column;
+  }
+
+  .det_rev {
+    flex-direction: column;
+  }
+}

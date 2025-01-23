@@ -1,0 +1,123 @@
+.footer {
+  border-top: 2px solid #f2f2f2;
+  padding: 5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.f_g {
+  display: flex;
+  justify-content: space-between;
+}
+.lo_ser {
+  display: flex;
+  gap: 8rem;
+}
+.logo p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  width: 15rem;
+}
+
+.f_ser {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.g_h {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.f_ser_item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.f_sub {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.f_sub_form {
+  background: rgb(192, 192, 192, 0.19);
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.f_sub_form input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.f_sub_form button {
+  cursor: pointer;
+  border: none;
+  background: #e89509;
+  color: white;
+  border-radius: 1.4rem;
+  padding: 5px 15px;
+}
+
+.f_social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.f_social p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.f_social_icons {
+  display: flex;
+  gap: 1.4rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.f_social_icons a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.f_copy {
+  text-align: center;
+  font-weight: 300;
+}
+
+.email {
+  color: #e89509;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 650px) {
+  .f_g {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .lo_ser {
+    justify-content: space-between;
+  }
+
+  .f_sub_form {
+    max-width: 30rem;
+  }
+
+  .email {
+    font-size: 1rem;
+  }
+}

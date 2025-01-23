@@ -1,0 +1,116 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.589);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav_items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.884);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav_link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  z-index: 20; /* Ensure links are above other elements */
+}
+
+.nav_link:hover {
+  color: #e89509;
+}
+
+.nav_items span {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  background: #e89509;
+  color: white;
+  border-radius: 1.4rem;
+  padding: 10px 10px;
+}
+
+.login {
+  text-decoration: none;
+  padding: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 1.4rem;
+  font-weight: 700;
+  color: inherit;
+}
+
+.hamburger {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+  z-index: 15;
+}
+
+@media (max-width: 675px) {
+  .res_nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+    padding: 5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .res_nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .res_nav.open {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .res_btn {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

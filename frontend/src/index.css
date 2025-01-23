@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #e89509;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", serif;
+}
+
+.lato-thin {
+  font-family: "Lato", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.active {
+  font-weight: bold;
+  color: #e89509;
+}
+
+.ql-editor {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+@media (max-width: 1023px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 426px) {
+  html {
+    font-size: 55%;
+  }
+}

@@ -1,0 +1,112 @@
+.blog {
+  padding: 15rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.blog button {
+  cursor: pointer;
+  border: none;
+  background: #e89509;
+  color: white;
+  border-radius: 1.4rem;
+  padding: 10px 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  column-gap: 5rem;
+}
+
+.bl_ca {
+  background-color: #f1f1f1;
+  padding: 1.4rem 2rem;
+  border-radius: 2rem;
+  display: flex;
+  cursor: pointer;
+  gap: 2rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.bl_ca img {
+  width: 50%;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+
+.bl_cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title_action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title_action h1 {
+  font-size: 2.5rem;
+}
+
+.icons {
+  display: flex;
+  gap: 8px;
+}
+
+.content {
+  font-size: 1.6rem;
+}
+
+.date_author {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.date_author time {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.date_author p {
+  font-size: 1.4rem;
+}
+
+.date_author span {
+  font-weight: 600;
+}
+
+@media (max-width: 1025px) {
+  .blog {
+    padding: 15rem 5rem;
+  }
+
+  .grid {
+    row-gap: 2rem;
+    column-gap: 3rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .blog {
+    padding: 15rem 2rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
