@@ -13,7 +13,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://digital-service-eta.vercel.app"],
+    origin: [
+      "http://localhost:5173",
+      "https://digitalservices-blue.vercel.app",
+    ],
     credentials: true,
   })
 );
