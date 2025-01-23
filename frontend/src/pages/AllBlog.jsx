@@ -3,10 +3,9 @@ import styles from "./AllBlog.module.css";
 import { FaPencilAlt, FaTrashAlt } from "react-icons/fa";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { deleteBlog, getAllBlog } from "../api/blog";
-import { useLogin } from "../context/loginContext";
+import { useLogin } from "../context/LoginContext";
 import toast from "react-hot-toast";
 import { SpinnerCircular } from "spinners-react";
-import DOMPurify from "dompurify";
 
 function formatDate(dateString) {
   const date = new Date(dateString);
